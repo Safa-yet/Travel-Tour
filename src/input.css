@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* =============
+Root Element
+============== */
+@theme{
+
+    --color-primary:#FF5400;
+    --color-text_light:rgba(66, 66, 71, 1);
+}
+
+
+/* ===========
+Common Element
+=============== */
+
+body{
+    font-family: "Mulish", sans-serif;;
+
+}
+.container{
+    width: 81%;
+    max-width: 1170px;
+    margin:50px auto;
+
+}
+
+
+
+
+/* ==============
+Hero Section
+================== */
+
+.hero{
+    /* @apply */
+    background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
+    /* bg-[url(/Images/Group39.png)] */
+}
