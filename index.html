@@ -5,38 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelTour</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <!-- Font Awsome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
-      <nav class="container flex justify-between mb-0">
+      <nav class="container flex justify-between mb-0 items-center">
         <a href="#home" class="flex items-center gap-4"
-          ><img src="./Images/Group 40071 (2).png" alt="" />
-          <p class="text-4xl font-bold">
+          ><img src="./img/logo.png" alt=""  />
+          <p class="lg:text-4xl font-bold">
             Hero<span class="text-primary">Travel</span>
           </p></a
         >
-        <ul class="flex gap-11 text-text_light text-lg">
+        <ul class="hidden lg:flex gap-11 text-text_light text-lg">
           <li><a href="#home" class="text-primary font-bold">Home </a></li>
           <li><a href="#packages">Packages</a></li>
           <li><a href="#testimonial">Testimonial</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="lg:hidden">
+
+          <i class="fa-solid fa-bars "></i>
+        </div>
       </nav>
       <section
         class="hero
          container
-          bg-[url(/Images/Group\ 13\ \(1\)\ \(1\).png)]
+         bg-[url(../img/hero.png)]
            bg-no-repeat
-        bg-black/40
+           bg-center
+        bg-black/30
            bg-blend-overlay
             bg-cover
              rounded-2xl
-              p-[106px]
+             p-6
+              lg:p-[106px]
     "
       >
-        <div class="mx-auto max-w-[800px] text-center text-white">
-          <h1 class="heading text-6xl font-extrabold  mb-6">
+        <div class="mx-auto  text-center text-white">
+          <h1 class="heading text-xl lg:text-6xl font-extrabold  mb-6">
             Explore Your Travel
           </h1>
           <p class="">
@@ -44,14 +52,53 @@
             adipiscing. In et odio enim ac quis sapien urna eu phasellus.
           </p>
 
-          <div class="p-4 bg-white/30 rounded-2xl grid grid-cols-4 gap-6 mt-12">
-            <input type="" placeholder="Where to" class="outline-0 text-text_light bg-white p-4 rounded-2xl">
-            <input type="text" placeholder="Where to" class="outline-0 text-text_light bg-white p-4 rounded-2xl">
-            <input type="text" placeholder="Where to" class="outline-0 text-text_light bg-white p-4 rounded-2xl">
-            <input type="submit" placeholder="Where to" class="outline-0 text-text_light bg-primary p-4 rounded-2xl">
+          <div class="p-4 bg-white/30 rounded-2xl grid lg:grid-cols-4 gap-6 mt-12">
+            <input type="" placeholder="Where to" class="outline-0 text-text_light bg-white p-4 rounded-2xl w-full">
+            <select name="when" id="" class="outline-0 text-text_light bg-white p-4 rounded-2xl w-full">when
+              <option value="1" >When</option>
+              <option value="1" >dfas</option>
+              <option value="1" >1</option>
+            </select>
+
+            <input type="text" placeholder="Where to" class="outline-0 text-text_light bg-white p-4 rounded-2xl w-full">
+            
+            <div class=" bg-primary p-4 rounded-2xl flex items-center gap-2 justify-center w-full"><i class="fa-solid fa-magnifying-glass"></i>
+
+<input type="submit" value="Find Now" class="outline-0 ">
+            </div>
           </div>
         </div>
       </section>
     </header>
+
+    <main>
+      <section class="container lg:flex gap-6 items-center">
+        <div class=" hero_text_sec lg:w-1/2">
+          <h1 class="sec-title">Our Popular Tours</h1>
+          <p class="my-6 text-text_light">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+          <p class="text-text_light mb-4">● Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</p>
+          <p class="text-text_light mb-4">● Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</p>
+          <p class="text-text_light mb-4">● Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</p>
+          <p class="text-text_light mb-4">● Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</p>
+          <p class="text-text_light">Amet consectetur. Vulputate commodo felis molestie risus 
+ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+<button class=" primary-btn text-xl font-bold bg-primary py-4 px-9 rounded-2xl text-white my-10">Read More</button>
+        </div>
+        <div class="hero_content ">
+          <img src="./img/hero2.png" alt="">
+        </div>
+
+      </section>
+      <!-- Destination -->
+
+      <section class="container">
+        <!-- Title -->
+         <div class="lg:max-w-[643px] text-center mx-auto">
+          <h1 class="sec-title">Choose Your Destination</h1>
+          <p class="sec_bio">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+         </div>
+
+      </section>
+    </main>
   </body>
 </html>

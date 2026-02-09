@@ -22,9 +22,11 @@ body{
 
 }
 .container{
-    width: 81%;
-    max-width: 1170px;
-    margin:50px auto;
+    @apply
+    mx-auto lg:my-12
+    w-10/12 max-w-6xl
+    my-6
+    
 
 }
 
@@ -35,8 +37,12 @@ body{
 Hero Section
 ================== */
 
-.hero{
-    /* @apply */
-    background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
-    /* bg-[url(/Images/Group39.png)] */
+.sec-title{
+    @apply
+    text-xl
+    lg:text-[40px] font-bold lg:mb-6
+}
+.sec_bio{
+    @apply
+    text-sm lg:text-lg
 }
