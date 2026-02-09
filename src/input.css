@@ -44,5 +44,5 @@ Hero Section
 }
 .sec_bio{
     @apply
-    text-sm lg:text-lg
+    text-sm lg:text-xl text-black/80
 }
